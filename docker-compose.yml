@@ -1,0 +1,20 @@
+services:
+  codebase-mcp:
+    image: node:20-bookworm
+    working_dir: /workspace/mcp-servers/codebase
+    command: sh -lc "npm install && npm run index && npm start"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      HWC_API_REPO_URL: ${HWC_API_REPO_URL:-https://github.com/PSMRI/HWC-API}
+      CACHE_DIR: /workspace/.cache
+      DB_PATH: /workspace/data/amrit.db
+    volumes:
+      - .:/workspace
+      - codebase_node_modules:/workspace/mcp-servers/codebase/node_modules
+      - amrit_data:/workspace/data
+      - amrit_cache:/workspace/.cache
+
+volumes:
+  codebase_node_modules:
+  amrit_data:
+  amrit_cache:

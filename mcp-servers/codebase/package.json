@@ -1,0 +1,34 @@
+{
+  "name": "amrit-codebase-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "index": "node dist/indexer.js",
+    "embed": "node dist/embed.js",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.1",
+    "better-sqlite3": "^11.10.0",
+    "dotenv": "^16.4.7",
+    "fast-glob": "^3.3.3",
+    "openai": "^4.102.0",
+    "simple-git": "^3.27.0",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-java": "^0.23.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/better-sqlite3": "^7.6.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
