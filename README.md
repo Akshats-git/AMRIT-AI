@@ -2,7 +2,7 @@
 
 AMRIT-AI is an agentic AI framework for the AMRIT healthcare platform. It is designed to connect development agents to AMRIT knowledge sources, plan retrieval deterministically, and support multi-step software delivery workflows across the AMRIT ecosystem.
 
-The project exists because AMRIT is spread across many repositories and domains. A useful agent for this platform needs more than a chat interface. It needs indexed repositories, structured retrieval, repeatable intent routing, and tool adapters that normalize context for different coding assistants.
+The project exists because AMRIT is spread across many repositories and domains. A useful agent for this platform needs more than a chat interface. It needs indexed repositories, structured retrieval, repeatable intent routing, and tool adapters that normalize context for different coding assistants. It is structured to enable future contributors to seamlessly integrate new features without ruining code quality.
 
 ## Architecture Overview
 

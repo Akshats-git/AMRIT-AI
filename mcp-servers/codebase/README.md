@@ -148,7 +148,7 @@ Output:
 
 ## Running the indexer
 
-The indexer clones or refreshes the local HWC-API checkout, computes diffs against the last indexed SHA, and reprocesses only changed files.
+The indexer clones or refreshes the local HWC-API checkout, computes diffs against the last indexed SHA, and reprocesses only changed files. First run takes 2-5 minutes and requires internet access.
 
 ```bash
 cd mcp-servers/codebase
