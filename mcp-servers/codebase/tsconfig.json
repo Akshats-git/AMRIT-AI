@@ -10,6 +10,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "types": ["node"],
+    "rootDir": "src",
     "outDir": "dist"
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts"],
